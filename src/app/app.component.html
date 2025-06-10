@@ -1,1 +1,13 @@
-<h1>Hello World</h1>
+<input matInput placeholder="" value="">
+
+@if(planets()) {
+  <ul>
+    @for(planet of planets(); track planet.name) {
+      <li>{{ planet.name }} -> {{ planet.population }}</li>
+    }
+  </ul>
+}
+
+
+
+
